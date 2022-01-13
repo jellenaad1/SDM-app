@@ -1,12 +1,14 @@
-<div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+<div class="bg-secondary p-2  bg-opacity-75">
+  <footer class="py-2 ">
+    <ul class="nav justify-content-center  pb-4 mb-4">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">About</a></li>
     </ul>
-    <p class="text-center text-muted">© 2021 Company, Inc</p>
+    <ul>
+    <p class="text-center text-dark">© 2021 Company, Inc</p>
+</ul>
   </footer>
 </div>
