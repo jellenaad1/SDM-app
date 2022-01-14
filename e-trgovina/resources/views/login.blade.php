@@ -1,6 +1,6 @@
 @extends('master')
 @section("content")
-<div class= "container custom-login .bg-light.bg-gradient">
+<div class= "container custom-login ">
     <div class="row">
         <div class = "col-sm-4 offset-sm-4">
         <form action="/login" method = "POST">
@@ -20,6 +20,8 @@
         </div>
 
     </div>
+
+   
 
 
 

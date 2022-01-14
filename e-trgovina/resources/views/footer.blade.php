@@ -1,4 +1,4 @@
-<div class="bg-secondary p-2  bg-opacity-75">
+<div  style="clear:both"  class="bg-secondary p-2  bg-opacity-75">
   <footer class="py-2 ">
     <ul class="nav justify-content-center  pb-4 mb-4">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">Home</a></li>

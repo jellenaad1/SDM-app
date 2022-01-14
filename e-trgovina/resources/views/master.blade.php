@@ -31,8 +31,35 @@
     .custom-login{
         height: 500px;
         padding-top:100px ;
+        background-color: #c5b5b559 !important;
+    }
+    img.slider-img{
+        height: 450px !important;
+        
+        
+    }
+    .custom-product{
+        height: 600px;
+    }
+    .slider-text{
+        background-color: #c5b5b559 !important;
     }
 
+    .trending-image{
+        height: 100px;
+    }
+    .trending-item{
+        float: start;
+        width: 20%;
+        
+    }
+    .trending-wrapper{
+        margin: 30px;
+    }
+
+    .detail-img{
+        height: 300px;
+    }
 
 
 

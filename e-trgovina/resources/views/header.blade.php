@@ -1,6 +1,23 @@
+<?php
+use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Session;
+
+$total = 0;
+
+if(Session::has('user')){
+  $total = ProductController::cartItem();
+}
+
+
+
+
+
+?>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">SDM</a>
+    <a class="navbar-brand" href="/">SDM</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,13 +31,36 @@
         </li>
        
         <li class="nav-item">
-          <a class="nav-link disabled">Cart(0)</a>
+          <a class="nav-link disabled">Korpa({{$total}})</a>
         </li>
+
+
+        
+
+        
+        
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
+      <ul class="navbar-nav  navbar=right mb-2 mb-lg-0">
+        @if(Session::has('user'))
+      <li class="nav-item dropdown">
+		   <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">{{Session::get('user')['name']}}</a>
+		    <ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="/logout">Odjavi se</a></li>
+			  
+		    </ul>
+		  </li>
+      @else
+
+      <a href="/login" class="nav-link  " > Prijavi se  </a>
+
+      @endif
+
+</ul>
+      
     </div>
   </div>
 </nav>
